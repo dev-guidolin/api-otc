@@ -25,7 +25,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://flowcripto.com'],
+    'allowed_origins' => ['https://flowcripto.com','http://localhost:5173'],
 
     'allowed_origins_patterns' => [],
 

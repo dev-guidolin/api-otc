@@ -91,4 +91,12 @@ class ApiController extends Controller
             ], 500);
         }
     }
+
+    public function currency(): JsonResponse
+    {
+        return response()->json([
+            'message' => 'Request Successfully',
+            'data' => \App\Actions\CryptoPriceAction::handle(),
+        ]);
+    }
 }

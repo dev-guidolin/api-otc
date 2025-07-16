@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/currency', [\App\Http\Controllers\ApiController::class, 'currency']);
+
+
 Route::post('/login', [\App\Http\Controllers\ApiController::class, 'login']);
 Route::post('/register', [\App\Http\Controllers\ApiController::class, 'register']);
 
